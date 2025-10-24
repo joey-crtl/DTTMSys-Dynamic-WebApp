@@ -1,8 +1,6 @@
-/* ==========================
-   Details Modal (Improved)
-========================== */
+/* Modal overlay and content remain the same */
 .details-modal {
-  background: rgba(0, 0, 0, 0.4); /* dim backdrop */
+  background: rgba(0, 0, 0, 0.4);
   position: fixed;
   inset: 0;
   display: flex;
@@ -18,6 +16,8 @@
   padding: 2rem 2.5rem;
   width: 90%;
   max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
   animation: modalFade 0.3s ease;
 }
@@ -27,23 +27,44 @@
   to { opacity: 1; transform: scale(1); }
 }
 
-/* Header */
+/* Modal Header */
 .details-modal h3 {
   margin-top: 0;
   color: #228B73;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   border-bottom: 2px solid #e8e8e8;
   padding-bottom: 0.8rem;
   margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Section inside modal */
+.details-modal .modal-section {
+  margin-bottom: 20px;
+}
+
+.details-modal .modal-section h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #444;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
 }
 
 /* Grid Layout */
 .details-modal .details-form-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* consistent two-column layout */
+  grid-template-columns: 1fr 1fr;
   gap: 1rem 1.5rem;
   align-items: start;
+}
+
+@media (max-width: 600px) {
+  .details-modal .details-form-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Inputs */
@@ -65,17 +86,17 @@
   outline: none;
 }
 
-.details-modal .form-row:has(input[name="passengers"]) {
-  grid-column: span 2;
-}
-
-/* Actions */
+/* Modal Actions */
 .details-modal .modal-actions {
-  grid-column: span 2;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 1rem;
   margin-top: 1.5rem;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  position: sticky;
+  bottom: 0;
+  background: #fff;
 }
 
 .details-modal .modal-actions button {
@@ -100,7 +121,4 @@
 
 .details-modal .modal-actions button:hover {
   opacity: 0.9;
-}
-.details-modal .modal-actions .cancel-btn:hover {
-  background: #e0e0e0;
 }
