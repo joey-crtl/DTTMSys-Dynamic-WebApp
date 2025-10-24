@@ -129,11 +129,12 @@ nav ul {
 
   .hamburger {
     display: flex;
-    position: absolute; /* position relative to header */
-    top: 0.8rem;        /* adjust vertical position */
-    right: 1rem;        /* closer to the right edge */
+    flex-direction: column;
     gap: 5px;
+    background: none;
+    border: none;
     cursor: pointer;
-    z-index: 1001;      /* above nav/sidebar */
+    z-index: 1001;
+    position: static; /* removes absolute positioning */
   }
 }
