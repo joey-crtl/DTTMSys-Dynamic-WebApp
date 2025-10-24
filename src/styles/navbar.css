@@ -109,18 +109,18 @@ nav ul {
   nav {
     position: fixed;
     top: 0;
-    left: -100%; /* move from left side now */
+    right: -100%;
     height: 100vh;
     width: 250px;
     background: #228B73;
     flex-direction: column;
     padding-top: 6rem;
-    transition: left 0.3s ease; 
+    transition: right 0.3s ease;
     z-index: 999;
   }
 
   nav.open {
-    left: 0; 
+    right: 0;
   }
 
   nav ul {
@@ -137,6 +137,6 @@ nav ul {
     border: none;
     cursor: pointer;
     z-index: 1001;
-    position: static;
+    position: static; /* removes absolute positioning */
   }
 }
