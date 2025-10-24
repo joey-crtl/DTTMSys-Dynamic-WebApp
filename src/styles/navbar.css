@@ -14,8 +14,9 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; 
   align-items: center;
+  gap: 3rem; 
   padding: 0 3rem;
 }
 
@@ -38,6 +39,7 @@ header {
 nav {
   display: flex;
   align-items: center;
+  margin-left: 2rem; 
 }
 
 nav ul {
@@ -107,18 +109,18 @@ nav ul {
   nav {
     position: fixed;
     top: 0;
-    right: -100%;
+    left: -100%; 
     height: 100vh;
     width: 250px;
     background: #228B73;
     flex-direction: column;
     padding-top: 6rem;
-    transition: right 0.3s ease;
+    transition: left 0.3s ease; 
     z-index: 999;
   }
 
   nav.open {
-    right: 0;
+    left: 0; 
   }
 
   nav ul {
@@ -135,6 +137,6 @@ nav ul {
     border: none;
     cursor: pointer;
     z-index: 1001;
-    position: static; /* removes absolute positioning */
+    position: static;
   }
 }
