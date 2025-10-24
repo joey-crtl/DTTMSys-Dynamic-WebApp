@@ -103,17 +103,7 @@ nav ul {
 }
 
 /* ===== Mobile Sidebar ===== */
-/* ===== Mobile Hamburger ===== */
 @media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-    margin-left: auto;  
-    gap: 5px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
   nav {
     position: fixed;
     top: 0;
@@ -135,5 +125,15 @@ nav ul {
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute; /* position relative to header */
+    top: 0.8rem;        /* adjust vertical position */
+    right: 1rem;        /* closer to the right edge */
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;      /* above nav/sidebar */
   }
 }
