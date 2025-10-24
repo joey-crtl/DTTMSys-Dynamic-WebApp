@@ -14,9 +14,9 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between; 
+  justify-content: flex-start; 
   align-items: center;
-  gap: 0; 
+  gap: 3rem; 
   padding: 0 3rem;
 }
 
@@ -39,6 +39,7 @@ header {
 nav {
   display: flex;
   align-items: center;
+  margin-left: 2rem; 
 }
 
 nav ul {
@@ -108,7 +109,7 @@ nav ul {
   nav {
     position: fixed;
     top: 0;
-    left: -100%; 
+    left: -100%; /* move from left side now */
     height: 100vh;
     width: 250px;
     background: #228B73;
@@ -135,8 +136,7 @@ nav ul {
     background: none;
     border: none;
     cursor: pointer;
-  }
-    header .container {
-    justify-content: space-between; /* ensures hamburger hugs right edge with logo on left */
+    z-index: 1001;
+    position: static;
   }
 }

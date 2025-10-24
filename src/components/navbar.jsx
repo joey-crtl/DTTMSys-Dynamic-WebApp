@@ -18,7 +18,7 @@ function Navbar() {
       const section = document.getElementById(id);
       if (section) section.scrollIntoView({ behavior: "smooth" });
     }
-    setMenuOpen(false);
+    setMenuOpen(false); // Close menu on click
   };
 
   useEffect(() => {
@@ -34,16 +34,6 @@ function Navbar() {
   return (
     <header>
       <div className="container">
-        {/* Hamburger moved before logo */}
-        <button
-          className={`hamburger ${menuOpen ? "active" : ""}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
         <h1 className="logo">
           <img src="./img/logoo.png" alt="Travista Logo" className="logo-img" />
           Doctor Travel & Tours
@@ -78,6 +68,16 @@ function Navbar() {
             </li>
           </ul>
         </nav>
+
+        {/* Hamburger Icon */}
+        <button
+          className={`hamburger ${menuOpen ? "active" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </header>
   );
