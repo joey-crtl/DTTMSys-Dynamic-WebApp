@@ -36,38 +36,32 @@ function Contact() {
     },
   ];
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+    const handleSubmit = async (e) => {
+      e.preventDefault();
 
-    if (!name || !email || !message) {
-      alert("Please fill all fields");
-      return;
-    }
+      if (!name || !email || !message) {
+        alert("Please fill all fields");
+        return;
+      }
 
-    setLoading(true);
+      setLoading(true);
 
-    const { data, error } = await supabase.from("feedback_info").insert([
-      {
-        name,
-        email,
-        message,
-        created_at: new Date(),
-      },
-    ]);
+      const { data, error } = await supabase.from("feedback_info").insert([
+        { name, email, message, submitted_at: new Date().toISOString() }
+      ]);
 
-    setLoading(false);
+      setLoading(false);
 
-    if (error) {
-      console.error("Error submitting feedback:", error);
-      alert("Failed to send message. Please try again.");
-    } else {
-      alert("Thank you for your feedback!");
-      setName("");
-      setEmail("");
-      setMessage("");
-    }
-  };
-
+      if (error) {
+        console.error("Error submitting feedback:", error);
+        alert("Failed to send message. Please try again.");
+      } else {
+        alert("Thank you for your feedback!");
+        setName("");
+        setEmail("");
+        setMessage("");
+      }
+    };
   return (
     <>
       {/* Contact Form Section */}
