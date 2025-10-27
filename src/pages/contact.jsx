@@ -167,16 +167,16 @@ function Contact() {
           <div className="connect-social">
             <h2>You can also visit us on social media</h2>
             <div className="social-icons">
-              <a href="#"><i className="fab fa-facebook-f"></i></a>
-              <a href="#"><i className="fab fa-tiktok"></i></a>
-              <a href="#"><i className="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/drtravelph"><i className="fab fa-facebook-f"></i></a>
+              <a href="https://www.tiktok.com/@dr.travelph"><i className="fab fa-tiktok"></i></a>
+              <a href="https://www.instagram.com/dr.travelph/"><i className="fab fa-instagram"></i></a>
             </div>
           </div>
           <div className="connect-info">
             <h3>Contact Information</h3>
-            <p><strong>Phone:</strong> +1-800-555-FLY</p>
-            <p><strong>Email:</strong> support@skyhigh.com</p>
-            <p><strong>Address:</strong> 123 Airway Blvd, Manila, Philippines</p>
+            <p><strong>Phone:</strong> +639757818134</p>
+            <p><strong>Email:</strong> doctortravelph@gmail.com</p>
+            <p><strong>Address:</strong> B7 L2 E-9 PH-1F San Jose Plains, San Jose, Rodriguez, Rizal</p>
           </div>
         </div>
       </section>
