@@ -197,7 +197,7 @@
         // Send email to owner
         // -----------------------
         const emailParams = {
-          owner_email: "solimanjoey01@gmail.com", 
+          owner_email: "doctortravelph@gmail.com", 
           user_name: fullName,
           user_email: formData.email,
           package_name: pkg.name,
