@@ -33,31 +33,28 @@ function About() {
           <div className="team-member">
             <img src="/img/DOC.jpg" alt="Kryshia Dean" />
             <p className="team-desc">
-              “With over 15 years of experience in global travel, Kryshia founded
-              Horizon Travels to help others explore the world with ease and
-              confidence.”
+              “With over 5 years of experience in global travel, I lead the team with a 
+              vision to make exploring the world simpler, more accessible, and more enjoyable for everyone.”
             </p>
-            <h3>Kryshia Dean</h3>
-            <span>Manager</span>
+            <h3>Kryshia Dean Degolacion</h3>
+            <span>Manager/Founder</span>
           </div>
 
           <div className="team-member">
             <img src="/img/SOLI.jpg" alt="Jose Enrique Soliman" />
             <p className="team-desc">
-              “With over 15 years of experience in global travel, Kryshia founded
-              Horizon Travels to help others explore the world with ease and
-              confidence.”
+              “As a Lead Developer, I make sure every system runs smoothly by 
+              combining collaboration and technical expertise to deliver efficient travel solutions.”
             </p>
             <h3>Jose Enrique Soliman</h3>
-            <span>Team Leader</span>
+            <span>Developer</span>
           </div>
 
           <div className="team-member">
             <img src="/img/KATH.jpg" alt="Kathlyn Leal" />
             <p className="team-desc">
-              “With over 15 years of experience in global travel, Kryshia founded
-              Horizon Travels to help others explore the world with ease and
-              confidence.”
+              “I’m passionate about creating visually engaging and user-friendly 
+              designs that make every travel experience more enjoyable and seamless”
             </p>
             <h3>Kathlyn Leal</h3>
             <span>Designer</span>
@@ -66,9 +63,8 @@ function About() {
           <div className="team-member">
             <img src="/img/GIE.jpg" alt="Rogie Cabunas" />
             <p className="team-desc">
-              “With over 15 years of experience in global travel, Kryshia founded
-              Horizon Travels to help others explore the world with ease and
-              confidence.”
+              “I focus on clarity and precision in every document I create, 
+              ensuring that system information is easy to understand and accessible to everyone.”
             </p>
             <h3>Rogie Cabunas</h3>
             <span>Documentation</span>
@@ -77,9 +73,8 @@ function About() {
           <div className="team-member">
             <img src="/img/LEE.jpg" alt="Jhon Lee Teofilo" />
             <p className="team-desc">
-              “With over 15 years of experience in global travel, Kryshia founded
-              Horizon Travels to help others explore the world with ease and
-              confidence.”
+              “"A passionate developer dedicated to creating efficient, 
+              user-friendly systems that enhance travel experiences for everyone"”
             </p>
             <h3>Jhon Lee Teofilo</h3>
             <span>Developer</span>
