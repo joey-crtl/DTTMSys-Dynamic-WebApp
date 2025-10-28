@@ -217,7 +217,7 @@ function Contact() {
               {/* Download App Button */}
               <a
                 href="https://expo.dev/artifacts/eas/pU8x2t3478LY2uaCn5oHrj.apk"
-                className="download-btn"
+                className="download-app-btn"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Download App"

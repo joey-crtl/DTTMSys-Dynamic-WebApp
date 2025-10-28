@@ -900,20 +900,20 @@ footer {
   font-weight: bold;
 }
 
-.download-btn {
+.download-app-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;      /* same as social icons height/width */
-  height: 40px;
+  width: 30px;      /* same as social icons height/width */
+  height: 30px;
   font-size: 1.5rem; /* same as social icons */
-  background-color: #228B73;
+  background-color: #020202;
   color: #fff;
   border-radius: 50%; /* make it circular like social icons */
   text-decoration: none;
   transition: background 0.3s ease;
 }
 
-.download-btn:hover {
+.download-app-btn:hover {
   background-color: #1a6a55;
 }
