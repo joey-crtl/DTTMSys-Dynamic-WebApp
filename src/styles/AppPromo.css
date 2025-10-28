@@ -1,0 +1,83 @@
+/* Footer banner */
+.app-promo-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #228B73;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+  z-index: 100;
+  font-weight: bold;
+}
+
+.app-promo-footer .download-btn {
+  background: #fff;
+  color: #228B73;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.app-promo-footer .download-btn:hover {
+  background: #1a5d4d;
+  color: #fff;
+}
+
+/* Popup modal */
+.app-promo-popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 20px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  z-index: 200;
+  width: 300px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.app-promo-popup.show {
+  opacity: 1;
+  transform: translate(-50%, 0); /* small upward animation */
+}
+
+.app-promo-popup .download-btn {
+  margin-top: 10px;
+  display: inline-block;
+  background: #228B73;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.app-promo-popup .download-btn:hover {
+  background: #1a5d4d;
+  color: #fff;
+}
+
+.app-promo-popup .close-btn {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Responsive popup */
+@media (max-width: 400px) {
+  .app-promo-popup {
+    width: 90%;
+    padding: 16px;
+  }
+}

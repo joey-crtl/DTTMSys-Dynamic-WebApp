@@ -213,6 +213,16 @@ function Contact() {
               <a href="https://www.facebook.com/drtravelph"><i className="fab fa-facebook-f"></i></a>
               <a href="https://www.tiktok.com/@dr.travelph"><i className="fab fa-tiktok"></i></a>
               <a href="https://www.instagram.com/dr.travelph/"><i className="fab fa-instagram"></i></a>
+
+              {/* Download App Button */}
+              <a
+                href="https://expo.dev/artifacts/eas/pU8x2t3478LY2uaCn5oHrj.apk"
+                className="download-app-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download App
+              </a>
             </div>
           </div>
           <div className="connect-info">

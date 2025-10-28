@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/main.css";
 import Multiclock from "../components/multiclock";
+import AppPromo from "../components/AppPromo";
 
 function Home() {
   const navigate = useNavigate();
@@ -45,6 +46,8 @@ function Home() {
 
   return (
     <>
+      <AppPromo />  
+      
       {/* Hero Section */}
       <section className="hero-slider" id="home">
         <div className="slides" id="slides">

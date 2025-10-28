@@ -899,3 +899,19 @@ footer {
   text-align: center;
   font-weight: bold;
 }
+
+.download-app-btn {
+  display: inline-block;
+  margin-left: 12px;
+  padding: 8px 16px;
+  background-color: #228B73;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.download-app-btn:hover {
+  background-color: #1a6a55;
+}
