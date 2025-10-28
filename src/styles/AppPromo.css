@@ -5,7 +5,7 @@
   background: #228B73;
   color: #fff;
   display: flex;
-  justify-content: center; /* center the text and download button */
+  justify-content: center;
   align-items: center;
   padding: 12px 24px;
   z-index: 9999;
@@ -16,7 +16,6 @@
   opacity: 1;
 
   animation: slideUp 0.5s ease forwards;
-  position: relative; /* for the close button */
 }
 
 .app-promo-footer span {
@@ -34,7 +33,7 @@
 }
 
 .app-promo-footer .close-btn {
-  position: absolute; /* float over the banner */
+  position: absolute; /* floats over the banner */
   top: 4px;
   right: 8px;
   background: transparent;
