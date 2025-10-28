@@ -904,8 +904,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;      /* same as social icons height/width */
-  height: 30px;
+  width: 25px;      /* same as social icons height/width */
+  height: 25px;
   font-size: 1.5rem; /* same as social icons */
   background-color: #020202;
   color: #fff;
