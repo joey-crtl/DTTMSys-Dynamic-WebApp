@@ -220,11 +220,9 @@ function Contact() {
                 className="download-btn"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Download App"
               >
-                <span className="material-icons" style={{ verticalAlign: "middle", marginRight: "6px" }}>
-                  download
-                </span>
-                Download
+                <i className="fa-solid fa-download"></i>
               </a>
             </div>
           </div>
