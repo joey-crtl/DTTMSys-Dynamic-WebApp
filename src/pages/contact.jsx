@@ -25,14 +25,33 @@ function Contact() {
 
   const faqs = [
     {
-      question: "Do you offer group discounts?",
+      question: "What services do you offer?",
       answer:
-        "Yes, we offer discounts for group travel. Please reach out to our team for more information.",
+        "We offer both local and international travel packages, visa assistance, flight and hotel booking, group tours, customized itineraries, and travel insurance coordination.",
     },
     {
-      question: "How will I receive my ticket?",
+      question: "How can I book a trip?",
       answer:
-        "Tickets are sent to your email address after successful booking. Make sure to check your spam folder as well.",
+        "Booking is easy! Just send us: \nFull names of all travelers (as shown in passport)\nPreferred travel dates and destination\nNumber of travelers\nOur team will send your quotation and booking steps.",
+    },
+    {
+      question: "Can you customize itineraries?",
+      answer:
+        "Absolutely! We can personalize your itinerary according to your preferences, schedule, and budget — whether it’s a family getaway, honeymoon, or barkada trip.",
+    },
+    {
+      question: "Do you assist with visa applications?",
+      answer:
+        "Yes! We provide visa assistance for destinations like Japan, Korea, China, and more. We’ll guide you with requirements, forms, and tips to ensure a smooth process.",
+    },
+    {
+      question: "What happens if my trip gets canceled?",
+      answer:
+        "Cancellations are subject to airline and hotel policies. We’ll guide you through the process and help with rebooking options whenever possible.",
+    },{
+      question: "Do you accommodate group or corporate travel?",
+      answer:
+        "Yes, we specialize in group bookings — perfect for company outings, educational tours, and family reunions. Large group packages may include a FREE tour guide!",
     },
   ];
 
@@ -135,9 +154,15 @@ function Contact() {
             ></iframe>
           </div>
           <div className="map-card">
-            <h3>Bayambang, Pangasinan</h3>
+            <h3>21 Rizal Ave, Bayambang, Pangasinan</h3>
             <iframe
-              src="https://www.google.com/maps?q=Bayambang,+Pangasinan&output=embed"
+              src="https://www.google.com/maps?q=21+Rizal+Ave,+Bayambang,+Pangasinan&output=embed"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
           <div className="map-card">

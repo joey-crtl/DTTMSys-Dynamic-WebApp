@@ -12,15 +12,15 @@ function About() {
           <div className="mission-box">
             <h3>Mission</h3>
             <p>
-              To provide accessible, reliable, and comfortable travel
-              experiences that connect people and cultures worldwide.
+              At Doctor Travel & Tours, we believe travel is the best medicine—our 
+              mission is to make every adventure easy, fun, and full of heartwarming memories.
             </p>
           </div>
           <div className="vision-box">
             <h3>Vision</h3>
             <p>
-              To become a global leader in air travel services, recognized for
-              customer satisfaction, innovation, and excellence.
+              To become a leading name in the travel industry by consistently providing excellence, 
+              reliability, and inspiration in every journey we create.
             </p>
           </div>
         </div>
@@ -96,11 +96,13 @@ function About() {
           <div className="story-text">
             <h3>Where It All Began</h3>
             <p>
-              In 2018, I founded (Company Name) Travel Agency after a life
-              changing solo trip across Southeast Asia. I realized how many
-              people dreamed of traveling but felt overwhelmed by the planning.
-              I wanted to create a company that made travel easy, personal, and
-              unforgettable. That passion sparked the birth of (Company Name).
+              Doctor Travel & Tours started as a simple dream shared by a group of doctors 
+              who found healing not only in medicine—but in travel. Before the pandemic, our 
+              founders spent their free time exploring breathtaking destinations, 
+              discovering the joy of new experiences, and realizing how travel can rejuvenate 
+              both body and soul. This shared passion inspired the birth of 
+              Doctor Travel & Tours—built on the belief that travel, like medicine, 
+              can be the perfect remedy for life’s stresses.
             </p>
           </div>
         </div>
@@ -110,9 +112,12 @@ function About() {
           <div className="story-text">
             <h3>Growing with Passion</h3>
             <p>
-              Now, we continue to grow adapting, exploring, and creating
-              unforgettable travel experiences. But no matter how far we go, our
-              heart remains in helping others see the world.
+              When the pandemic struck, the world came to a standstill. 
+              Flights were grounded, borders closed, and dreams were momentarily paused. 
+              For us, it was a heartbreaking chapter. 
+              Yet amid the uncertainty, our passion for travel never faded. 
+              We used that time to strengthen our vision, improve our services, and 
+              prepare for the day people could explore again—safely, comfortably, and confidently.
             </p>
           </div>
         </div>
@@ -122,9 +127,12 @@ function About() {
           <div className="story-text">
             <h3>Looking Ahead</h3>
             <p>
-              We’re here to guide, support, and inspire every step of your
-              journey. Whether it’s your first trip or your fiftieth, we treat
-              every adventure like it’s our own.
+              Today, Doctor Travel & Tours stands stronger than ever. 
+              What began as a group of doctors who love traveling has grown 
+              into a dedicated team committed to crafting seamless, joy-filled adventures for everyone. 
+              We continue to live by our promise—Your Rx for Adventure—because we believe that travel 
+              remains one of life’s greatest medicines, bringing healing, happiness, and connection 
+              wherever the journey leads.
             </p>
           </div>
         </div>

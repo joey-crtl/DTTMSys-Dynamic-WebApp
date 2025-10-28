@@ -88,8 +88,7 @@ function Home() {
         <div className="what-we-do-box">
           <h2>What We Do</h2>
           <p>
-            We take care of the details—booking your flights, finding the perfect stay,
-            and scheduling every part of your journey so you can travel stress-free.
+            Doctor Travel & Tours provides hassle-free, customized travel experiences and tour packages that make every journey your perfect “Rx for Adventure."
           </p>
           <button onClick={() => scrollToSection("features")}>Our Service</button>
         </div>
