@@ -20,7 +20,7 @@ const AppPromo = () => {
 
   return (
     <div className={`app-promo-footer ${hiding ? "hide" : ""}`}>
-      <span>Download our app for exclusive deals!</span>
+      <span>Download our app for better experience!</span>
       <div>
         <a
           href="https://expo.dev/artifacts/eas/pU8x2t3478LY2uaCn5oHrj.apk"
