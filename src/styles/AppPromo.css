@@ -5,19 +5,43 @@
   background: #228B73;
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* center the text and download button */
   align-items: center;
   padding: 12px 24px;
   z-index: 9999;
   font-weight: bold;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
 
-  /* Start below screen and fully visible */
   transform: translateY(100%);
   opacity: 1;
 
-  /* Slide up animation */
   animation: slideUp 0.5s ease forwards;
+  position: relative; /* for the close button */
+}
+
+.app-promo-footer span {
+  font-size: 16px;
+  margin-right: 12px;
+}
+
+.app-promo-footer .download-btn {
+  background: #fff;
+  color: #228B73;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.app-promo-footer .close-btn {
+  position: absolute; /* float over the banner */
+  top: 4px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
 }
 
 .app-promo-footer.hide {
