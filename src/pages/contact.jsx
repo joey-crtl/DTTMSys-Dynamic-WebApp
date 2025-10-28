@@ -217,11 +217,14 @@ function Contact() {
               {/* Download App Button */}
               <a
                 href="https://expo.dev/artifacts/eas/pU8x2t3478LY2uaCn5oHrj.apk"
-                className="download-app-btn"
+                className="download-btn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Download App
+                <span className="material-icons" style={{ verticalAlign: "middle", marginRight: "6px" }}>
+                  download
+                </span>
+                Download
               </a>
             </div>
           </div>
