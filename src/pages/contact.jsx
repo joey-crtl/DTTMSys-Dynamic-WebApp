@@ -148,13 +148,19 @@ function Contact() {
             ></iframe>
           </div>
           <div className="map-card">
-            <h3>Calasiao, Pangasinan</h3>
+            <h3>Malasiqui, Pangasinan</h3>
             <iframe
-              src="https://www.google.com/maps?q=Calasiao,+Pangasinan&output=embed"
+              src="https://www.google.com/maps?q=Magsaysay+St,+Poblacion,+Malasiqui,+Pangasinan&output=embed"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
           <div className="map-card">
-            <h3>21 Rizal Ave, Bayambang, Pangasinan</h3>
+            <h3>Bayambang, Pangasinan</h3>
             <iframe
               src="https://www.google.com/maps?q=21+Rizal+Ave,+Bayambang,+Pangasinan&output=embed"
               width="100%"
@@ -166,15 +172,27 @@ function Contact() {
             ></iframe>
           </div>
           <div className="map-card">
-            <h3>Tarlac, Camiling</h3>
+            <h3>Camiling, Tarlac</h3>
             <iframe
-              src="https://www.google.com/maps?q=Tarlac,+Camiling&output=embed"
+              src="https://www.google.com/maps/embed?pb=!4v163278973029128082!6m8!1m7!1skwofGDMPv7611Tmk9fz5Og!2m2!1d120.4148237!2d15.9183753!3f108.9!4f76.72!5f0.7820865974627469"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
           <div className="map-card">
-            <h3>Montalban, Rizal</h3>
+            <h3>San Jose, Rodriguez, Rizal</h3>
             <iframe
-              src="https://www.google.com/maps?q=Montalban,+Rizal&output=embed"
+              src="https://www.google.com/maps/embed?pb=!4v163278973029128082!6m8!1m7!1sZqUm8nQMisUbFbFQ0nqMkA!2m2!1d121.1403355!2d14.7526334!3f353.14!4f70.21!5f0.7820865974627469"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
