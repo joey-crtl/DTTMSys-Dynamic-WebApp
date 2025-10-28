@@ -32,7 +32,7 @@ function Contact() {
     {
       question: "How can I book a trip?",
       answer:
-        "Booking is easy! Just send us: \nFull names of all travelers (as shown in passport)\nPreferred travel dates and destination\nNumber of travelers\nOur team will send your quotation and booking steps.",
+        "Booking is easy! Just send us: 1.Full names of all travelers (as shown in passport)2. Preferred travel dates and destination 3. Number of travelers. Our team will send your quotation and booking steps.",
     },
     {
       question: "Can you customize itineraries?",
