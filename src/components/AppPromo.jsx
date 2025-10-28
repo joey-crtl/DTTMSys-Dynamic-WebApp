@@ -2,39 +2,43 @@ import React, { useState, useEffect } from "react";
 import "../styles/AppPromo.css";
 
 const AppPromo = () => {
-  const [showPopup, setShowPopup] = useState(false);
+  const [showBanner, setShowBanner] = useState(true);
+  const [hiding, setHiding] = useState(false);
 
-  // Auto-show popup after page load
+  // Auto-hide banner after 8 seconds
   useEffect(() => {
-    setShowPopup(true);
-    const timer = setTimeout(() => setShowPopup(false), 8000); // auto-hide
+    const timer = setTimeout(() => handleClose(), 8000);
     return () => clearTimeout(timer);
   }, []);
 
+  const handleClose = () => {
+    setHiding(true);
+    setTimeout(() => setShowBanner(false), 500); // match animation duration
+  };
+
+  if (!showBanner) return null;
+
   return (
-    <>
-      {/* Popup Modal */}
-      {showPopup && (
-        <div className={`app-promo-popup ${showPopup ? "show" : ""}`}>
-          <div className="popup-content">
-            <span>Download our app for exclusive deals!</span>
-            <a
-              href="https://expo.dev/artifacts/eas/pU8x2t3478LY2uaCn5oHrj.apk"
-              className="download-btn"
-            >
-              Download
-            </a>
-            <button
-              className="close-btn"
-              aria-label="Close popup"
-              onClick={() => setShowPopup(false)}
-            >
-              ×
-            </button>
-          </div>
-        </div>
-      )}
-    </>
+    <div className={`app-promo-footer ${hiding ? "hide" : ""}`}>
+      <span>Download our app for exclusive deals!</span>
+      <div>
+        <a
+          href="https://expo.dev/artifacts/eas/pU8x2t3478LY2uaCn5oHrj.apk"
+          className="download-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download
+        </a>
+        <button
+          className="close-btn"
+          onClick={handleClose}
+          aria-label="Close banner"
+        >
+          ×
+        </button>
+      </div>
+    </div>
   );
 };
 
