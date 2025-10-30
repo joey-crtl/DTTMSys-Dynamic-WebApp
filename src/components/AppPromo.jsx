@@ -23,7 +23,7 @@ const AppPromo = () => {
       <span>Download our app for better experience!</span>
       <div>
         <a
-          href="https://expo.dev/artifacts/eas/pU8x2t3478LY2uaCn5oHrj.apk"
+          href="https://drive.google.com/uc?export=download&id=1TeA6-FrrPuRf7dYNdetxMzmcKaQVgpiE"
           className="download-btn"
           target="_blank"
           rel="noopener noreferrer"
