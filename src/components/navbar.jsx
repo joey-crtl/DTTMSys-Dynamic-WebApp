@@ -57,6 +57,11 @@ function Navbar() {
               </Link>
             </li>
             <li>
+              <Link className="nav-link" to="/blogs" onClick={() => setMenuOpen(false)}>
+                Blogs
+              </Link>
+            </li>
+            <li>
               <button className="nav-link" onClick={() => scrollToSection("about")}>
                 About
               </button>
@@ -66,6 +71,7 @@ function Navbar() {
                 Contact
               </button>
             </li>
+            
           </ul>
         </nav>
 

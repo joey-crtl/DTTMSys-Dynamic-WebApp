@@ -6,6 +6,7 @@ import International from "./pages/international";
 import Domestic from "./pages/domestic";
 import Search from "./pages/search";
 import Details from "./pages/details";
+import Blogs from "./pages/blogs";
 import Navbar from "./components/navbar"; 
 import "./styles/main.css";
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/domestic" element={<Domestic />} />
         <Route path="/search" element={<Search />} />
         <Route path="/details" element={<Details />} />
+        <Route path="/blogs" element={<Blogs />} />
       </Routes>
     </Router>
   );

@@ -1,0 +1,261 @@
+/* ===== blog.css ===== */
+
+/* Page wrapper */
+.blog-page {
+  max-width: 980px;
+  margin: 40px auto;
+  padding: 0 16px;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #f7f7f7;
+  min-height: 100vh;
+}
+
+/* Header */
+.blog-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.upload-toggle-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #228B73;
+  color: #fff;
+}
+
+.upload-toggle-btn:hover {
+  background: #1f7a63;
+}
+
+/* Feed */
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+}
+
+.post-title h3 {
+  margin: 0;
+  color: #1b4332;
+  font-size: 16px;
+}
+
+.post-meta {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Delete Button */
+.post-actions .delete-btn {
+  border: 1px solid rgba(214,69,69,0.2);
+  background: transparent;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #d64545;
+  font-weight: 600;
+}
+
+.post-actions .delete-btn:hover {
+  background: rgba(214,69,69,0.06);
+}
+
+/* Image / media */
+.post-media {
+  width: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-media {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+/* Text body */
+.post-body {
+  padding: 14px 18px 20px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal {
+  width: 720px;
+  max-width: 95%;
+  max-height: 90vh; 
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow-y: auto;   /* SCROLLABLE BODY */
+  max-height: calc(90vh - 80px); /* account for header + padding */
+}
+
+/* Inputs */
+.input,
+.textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #228B73;
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Dropzone */
+.dropzone {
+  border: 2px dashed #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #666;
+  cursor: pointer;
+}
+
+.dropzone.active {
+  border-color: #228B73;
+  background: rgba(34,139,115,0.05);
+}
+
+/* Preview */
+.preview-wrap {
+  margin-top: 12px;
+}
+
+.preview-media {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Action Buttons */
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.modal-actions .btn.primary {
+  background-color: #228B73 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.modal-actions .btn.primary:hover {
+  background-color: #1f7a63 !important;
+}
+
+/* Skeleton loader */
+.skeleton-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.skeleton-card {
+  height: 420px;
+  border-radius: 12px;
+  background: linear-gradient(-90deg,#f0f0f0 0%, #eaeaea 50%, #f0f0f0 100%);
+  background-size: 400% 400%;
+  animation: shimmer 1.4s infinite linear;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Responsive */
+@media (max-width: 820px) {
+  .blog-media { max-height: 420px; }
+}
