@@ -25,48 +25,61 @@ export default function Blogs() {
   return (
     <div className="blog-page">
 
-      {/* Intro Section */}
-      <section className="blog-intro">
-        <h1>Travel Blogs</h1>
-        <p>Explore travel experiences shared by our community and team.</p>
-        <img src="./img/tokyoo.jpg" alt="Travel Intro" className="blog-intro-img" />
+      {/* Hero Section */}
+      <section className="hero">
+        <img src="./img/tokyoo.jpg" alt="Travel Hero" className="no-button-img" />
+        <div className="hero-text">
+          <h1>Travel Blogs</h1>
+          <p>Explore travel experiences shared by our community and team.</p>
+        </div>
       </section>
 
       {/* Blog Feed */}
-      {loadingPosts ? (
-        <div className="skeleton-grid">
-          <div className="skeleton-card" />
-          <div className="skeleton-card" />
-          <div className="skeleton-card" />
-        </div>
-      ) : (
-        <div className="feed">
-          {posts.map((p) => (
-            <article className="post-card" key={p.id}>
-              <div className="post-header">
-                <h3>{p.title}</h3>
-                <div className="post-meta">{new Date(p.created_at).toLocaleDateString()}</div>
+      <section className="fb-feed">
+        {loadingPosts ? (
+          <div className="skeleton-grid">
+            <div className="skeleton-card" />
+            <div className="skeleton-card" />
+            <div className="skeleton-card" />
+          </div>
+        ) : posts.length === 0 ? (
+          <p>No blogs available.</p>
+        ) : (
+          posts.map((post) => (
+            <div key={post.id} className="fb-post-card">
+              {/* Post Header */}
+              <div className="fb-post-header">
+                <h3>{post.title}</h3>
+                <span className="fb-post-date">
+                  {new Date(post.created_at).toLocaleDateString()}
+                </span>
               </div>
 
-              <div className="post-media">
-                {p.media_type === "video" ? (
+              {/* Post Media */}
+              <div className="fb-post-media">
+                {post.media_type === "video" ? (
                   <video
-                    src={p.media_url}
+                    src={post.media_url}
                     controls
                     className="blog-media"
                   />
                 ) : (
-                  <img src={p.media_url} alt={p.title} className="blog-media" />
+                  <img
+                    src={post.media_url}
+                    alt={post.title}
+                    className="blog-media"
+                  />
                 )}
               </div>
 
-              <div className="post-body">
-                <p>{p.description}</p>
+              {/* Post Body */}
+              <div className="fb-post-body">
+                <p>{post.description}</p>
               </div>
-            </article>
-          ))}
-        </div>
-      )}
+            </div>
+          ))
+        )}
+      </section>
     </div>
   );
 }
