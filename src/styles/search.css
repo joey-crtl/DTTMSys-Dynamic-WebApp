@@ -212,18 +212,17 @@ footer {
   max-width: 600px;
   width: 90%;
   max-height: 90vh;
-  overflow-y: auto;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
 }
-
 .modal h3 {
   color: #228B73;
   margin-bottom: 20px;
 }
 
 .modal-actions {
-  display: flex;
-  justify-content: space-between;
+  flex-shrink: 0;
   margin-top: 20px;
 }
 
@@ -259,6 +258,9 @@ footer {
   list-style: none;
   padding: 0;
   margin: 0 0 20px 0;
+  max-height: 60vh; /* controls scroll area */
+  overflow-y: auto; /* scrolling happens here */
+  padding-right: 8px; /* avoids text hiding under scrollbar */
 }
 
 .itinerary-list li {
