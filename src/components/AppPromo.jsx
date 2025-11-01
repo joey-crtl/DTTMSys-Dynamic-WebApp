@@ -23,7 +23,7 @@ const AppPromo = () => {
       <span>Download our app for better experience!</span>
       <div>
         <a
-          href="https://drive.google.com/uc?export=download&id=1TeA6-FrrPuRf7dYNdetxMzmcKaQVgpiE"
+          href="https://drive.google.com/uc?export=download&id=10n_tEMXFcgHzE6fNA7gJ_nYaoxJ84Jtd"
           className="download-btn"
           target="_blank"
           rel="noopener noreferrer"
