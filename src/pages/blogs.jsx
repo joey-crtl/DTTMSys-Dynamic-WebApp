@@ -23,9 +23,8 @@ export default function Blogs() {
   }
 
   return (
-    <div className="blog-page">
-
-      {/* Hero Section */}
+    <>
+      {/* Hero Section (outside blog-page) */}
       <section className="hero">
         <img src="./img/tokyoo.jpg" alt="Travel Hero" className="no-button-img" />
         <div className="hero-text">
@@ -35,51 +34,53 @@ export default function Blogs() {
       </section>
 
       {/* Blog Feed */}
-      <section className="fb-feed">
-        {loadingPosts ? (
-          <div className="skeleton-grid">
-            <div className="skeleton-card" />
-            <div className="skeleton-card" />
-            <div className="skeleton-card" />
-          </div>
-        ) : posts.length === 0 ? (
-          <p>No blogs available.</p>
-        ) : (
-          posts.map((post) => (
-            <div key={post.id} className="fb-post-card">
-              {/* Post Header */}
-              <div className="fb-post-header">
-                <h3>{post.title}</h3>
-                <span className="fb-post-date">
-                  {new Date(post.created_at).toLocaleDateString()}
-                </span>
-              </div>
-
-              {/* Post Media */}
-              <div className="fb-post-media">
-                {post.media_type === "video" ? (
-                  <video
-                    src={post.media_url}
-                    controls
-                    className="blog-media"
-                  />
-                ) : (
-                  <img
-                    src={post.media_url}
-                    alt={post.title}
-                    className="blog-media"
-                  />
-                )}
-              </div>
-
-              {/* Post Body */}
-              <div className="fb-post-body">
-                <p>{post.description}</p>
-              </div>
+      <div className="blog-page">
+        <section className="fb-feed">
+          {loadingPosts ? (
+            <div className="skeleton-grid">
+              <div className="skeleton-card" />
+              <div className="skeleton-card" />
+              <div className="skeleton-card" />
             </div>
-          ))
-        )}
-      </section>
-    </div>
+          ) : posts.length === 0 ? (
+            <p>No blogs available.</p>
+          ) : (
+            posts.map((post) => (
+              <div key={post.id} className="fb-post-card">
+                {/* Post Header */}
+                <div className="fb-post-header">
+                  <h3>{post.title}</h3>
+                  <span className="fb-post-date">
+                    {new Date(post.created_at).toLocaleDateString()}
+                  </span>
+                </div>
+
+                {/* Post Media */}
+                <div className="fb-post-media">
+                  {post.media_type === "video" ? (
+                    <video
+                      src={post.media_url}
+                      controls
+                      className="blog-media"
+                    />
+                  ) : (
+                    <img
+                      src={post.media_url}
+                      alt={post.title}
+                      className="blog-media"
+                    />
+                  )}
+                </div>
+
+                {/* Post Body */}
+                <div className="fb-post-body">
+                  <p>{post.description}</p>
+                </div>
+              </div>
+            ))
+          )}
+        </section>
+      </div>
+    </>
   );
 }
