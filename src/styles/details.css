@@ -3,13 +3,13 @@
   background: rgba(0, 0, 0, 0.4);
   position: fixed;
   inset: 0;
-  display: block;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 2000;
   backdrop-filter: blur(3px);
-  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  touch-action: pan-y;
-  padding: 2rem 1rem;
+   touch-action: pan-y;
 }
 
 .details-modal .modal-content {
@@ -18,10 +18,11 @@
   padding: 2rem 2.5rem;
   width: 90%;
   max-width: 700px;
-  max-height: calc(100vh - 4rem); 
+  max-height: 90vh;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  margin: 0 auto;
+  -webkit-overflow-scrolling: touch; 
+  overscroll-behavior: contain;      
+  padding-right: 10px;        
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
   animation: modalFade 0.3s ease;
 }

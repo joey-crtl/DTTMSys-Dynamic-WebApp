@@ -371,7 +371,7 @@
         {/* Details Modal */}
         {showDetailsModal && (
           <div className="modal-overlay details-modal">
-            <div className="modal">
+            <div className="modal-content">
               <h3>Enter Your Details</h3>
               <form className="details-form-grid" onSubmit={handleDetailsSubmit}>
                 <div className="form-row">
