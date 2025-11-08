@@ -10,7 +10,7 @@
   backdrop-filter: blur(3px);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  touch-action: none;
+   touch-action: pan-y;
 }
 
 .details-modal .modal-content {
