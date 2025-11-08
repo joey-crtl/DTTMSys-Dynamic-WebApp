@@ -79,22 +79,34 @@
 
 /* Inputs */
 .details-modal input,
-.details-modal select {
+.details-modal select,
+.details-modal textarea {
   width: 100%;
   padding: 10px 12px;
-  font-size: 14px;
+  font-size: 16px; /* Prevents mobile zoom */
   border: 1px solid #ccc;
   border-radius: 6px;
   box-sizing: border-box;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Focus state */
 .details-modal input:focus,
-.details-modal select:focus {
+.details-modal select:focus,
+.details-modal textarea:focus {
   border-color: #228B73;
   box-shadow: 0 0 0 3px rgba(34, 139, 115, 0.15);
   outline: none;
 }
+
+/* Placeholder text */
+.details-modal input::placeholder,
+.details-modal select::placeholder,
+.details-modal textarea::placeholder {
+  font-size: 14px; /* Smaller visual size for placeholder */
+  color: #999;
+}
+
 
 /* Modal Actions (sticky footer) */
 .details-modal .modal-actions {
