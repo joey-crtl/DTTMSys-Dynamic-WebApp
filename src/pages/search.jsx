@@ -411,10 +411,14 @@
                     required
                   />
                   <input
-                    type="date"
+                    type="text"
                     name="dob"
                     placeholder="Date of Birth"
                     value={formData.dob}
+                    onFocus={(e) => (e.target.type = "date")}
+                    onBlur={(e) => {
+                      if (!e.target.value) e.target.type = "text";
+                    }}
                     onChange={handleChange}
                     required
                   />
