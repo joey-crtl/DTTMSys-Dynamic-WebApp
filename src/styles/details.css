@@ -145,3 +145,48 @@
 .details-modal .modal-actions button:hover {
   opacity: 0.9;
 }
+
+/* --- Mobile Fixes for Modal Alignment --- */
+@media (max-width: 600px) {
+  .details-modal .modal-content {
+    padding: 1.5rem;
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .details-modal .details-form-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .details-modal .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .details-modal input,
+  .details-modal select,
+  .details-modal textarea {
+    font-size: 15px;
+    line-height: 1.4;
+    padding: 10px 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Fix placeholder misalignment */
+  .details-modal input::placeholder,
+  .details-modal select::placeholder {
+    line-height: normal;
+    font-size: 14px;
+  }
+
+  /* Prevent text from being cut off */
+  .details-modal input,
+  .details-modal select {
+    height: auto;
+    min-height: 44px; /* good for tap targets */
+  }
+}

@@ -473,7 +473,7 @@
                   {formData.documentType === "Passport" && (
                     <div className="form-row">
                       <input
-                        type="date"
+                        type="text"
                         name="passportExpiration"
                         placeholder="Passport Expiration"
                         value={passportExpiration}
