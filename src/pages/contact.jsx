@@ -216,7 +216,7 @@ function Contact() {
 
               {/* Download App Button */}
               <a
-                href="https://drive.google.com/uc?export=download&id=1qFtZrwgke9Caey5QO0FBFSTKrexsSw_e"
+                href="https://github.com/joey-crtl/DTTMSys-Mobile-app/releases/download/dttmsys.v1/Doctor.Travel.Tours.apk"
                 className="download-app-btn"
                 target="_blank"
                 rel="noopener noreferrer"
